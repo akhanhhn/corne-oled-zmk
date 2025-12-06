@@ -35,7 +35,7 @@ layers:
   - {t: ▽, type: trans}
   - HOME
   - PAGE DOWN
-  - PAGE DOWN
+  - PAGE UP
   - END
   - {t: ▽, type: trans}
   - LSHIFT
@@ -89,6 +89,7 @@ layers:
   - {type: held}
   - RALT
   fn:
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -100,19 +101,18 @@ layers:
   - F9
   - F10
   - F11
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
