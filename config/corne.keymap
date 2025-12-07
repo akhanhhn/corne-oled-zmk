@@ -80,7 +80,7 @@
                 };
 
             // x + c => delete
-                combo_backspace {
+                combo_delete {
                 binding = <&kp DEL>;
                 key-positions = <26 27>;
                 };
