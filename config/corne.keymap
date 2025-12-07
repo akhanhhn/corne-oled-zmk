@@ -33,7 +33,45 @@
                         bindings = <&kp LSHIFT>, <&kp CAPS>;
                 };
         };
-
+        combos {
+                compatible = "zmk,combos";
+        
+                // U + I => (
+                combo_paren_l {
+                    bindings = <&kp LPAR>;
+                    key-positions = <16 17>;
+                };
+        
+                // I + O => )
+                combo_paren_r {
+                    bindings = <&kp RPAR>;
+                    key-positions = <17 18>;
+                };
+        
+                // J + K => [
+                combo_bracket_l {
+                    bindings = <&kp LBKT>;
+                    key-positions = <20 21>;
+                };
+        
+                // K + L => ]
+                combo_bracket_r {
+                    bindings = <&kp RBKT>;
+                    key-positions = <21 22>;
+                };
+        
+                // M + , => {
+                combo_brace_l {
+                    bindings = <&kp LBRC>;
+                    key-positions = <25 26>;
+                };
+        
+                // , + . => }
+                combo_brace_r {
+                    bindings = <&kp RBRC>;
+                    key-positions = <26 27>;
+                };
+            };
         keymap {
                 compatible = "zmk,keymap";
 
