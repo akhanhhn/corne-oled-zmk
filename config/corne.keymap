@@ -85,6 +85,18 @@
                 bindings = <&kp DEL>;
                 key-positions = <26 27>;
                 };
+
+            // c + v => shift
+                combo_shift {
+                bindings = <&kp LSHIFT>;
+                key-positions = <27 28>;
+                };
+
+            // v + b => enter
+                combo_enter {
+                bindings = <&kp RET>;
+                key-positions = <28 29>;
+                };
         };
 
         keymap {
