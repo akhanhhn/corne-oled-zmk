@@ -148,3 +148,7 @@ combos:
   k: BSPC
 - p: [26, 27]
   k: DEL
+- p: [27, 28]
+  k: LSHIFT
+- p: [28, 29]
+  k: RET
