@@ -75,13 +75,13 @@
 
             // z + x => backspace
                 combo_backspace {
-                binding = <&kp BSPC>;
+                bindings = <&kp BSPC>;
                 key-positions = <25 26>;
                 };
 
             // x + c => delete
                 combo_delete {
-                binding = <&kp DEL>;
+                bindings = <&kp DEL>;
                 key-positions = <26 27>;
                 };
         };
