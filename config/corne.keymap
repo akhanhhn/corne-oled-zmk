@@ -36,7 +36,8 @@
         combos {
             compatible = "zmk,combos";
                 timeout-ms = <50>;
-        
+                require-prior-idle-ms = <30>;
+
             // U + I => (
             combo_paren_l {
                 bindings = <&kp LPAR>;
