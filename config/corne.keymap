@@ -117,15 +117,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |  ||  |  6  |  7    |  8  |  9  |  0  | BKSP |
-// | ESC  |     |     |     |     |     |  ||  | LFT | DWN   |  UP | RGT |     |      |
-// |LCTRL |     |     |     |     |     |  ||  | home|pgdown |pgup | end |     |LSHIFT|
-//                    | GUI |     | SPC |  ||  | ENT |     | ALT |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |  ||  |  6  |  7  |  8  |  9  |  -  | BKSP |
+// | ESC  |     | LFT | DWN | UP  | RGT |  ||  |  *  |  4  |  5  |  6  |  +  |  =   |
+// |LCTRL |     |     |     |     |     |  ||  |  /  |  1  |  2  |  3  |  .  |LSHIFT|
+//                    | GUI |     | SPC |  ||  | ENT |     |  0  |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5   /**/    &kp N6   &kp N7          &kp N8        &kp N9       &kp N0   &kp BSPC
-   &kp ESC    &trans       &trans       &trans       &trans       &trans   /**/    &kp LEFT &kp DOWN        &kp UP        &kp RIGHT    &trans   &trans
-   &kp LCTRL  &trans       &trans       &trans       &trans       &trans   /**/    &kp HOME &kp PAGE_DOWN   &kp PAGE_UP   &kp END       &trans   &kp LSHIFT
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp TAB    &kp N1     &kp N2       &kp N3       &kp N4       &kp N5      /**/    &kp N6    &kp N7    &kp N8   &kp N9    &kp MINUS  &kp BSPC
+   &kp ESC    &trans     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT   /**/    &kp ASTRK &kp N4    &kp N5   &kp N6    &kp PLUS   &kp EQUAL
+   &kp LCTRL  &trans     &trans       &trans       &trans       &trans      /**/    &kp FSLH  &kp N1    &kp N2   &kp N3    &kp DOT    &kp LSHIFT
+                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp N0
                         >;
                 };
 
