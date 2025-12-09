@@ -49,7 +49,7 @@
                         quick-tap-ms = <120>;
                         flavor = "tap-preferred";
         
-                        bindings = <&kp F>, <&kp LSHIFT>;
+                        bindings = <&kp F &kp LSHIFT>;
                     };
 
                 j_shift: j_shift {
@@ -61,7 +61,7 @@
                         quick-tap-ms = <120>;
                         flavor = "tap-preferred";
                 
-                        bindings = <&kp J>, <&kp RSHIFT>;
+                        bindings = <&kp J &kp RSHIFT>;
                     };
         };
 
