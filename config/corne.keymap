@@ -40,29 +40,57 @@
                         bindings = <&kp DOT>, <&kp COLON>;
                 };
 
+                f_key: f_key {
+                    compatible = "zmk,behavior-key-press";
+                    label = "F_KEY";
+                    #binding-cells = <0>;
+                    keycode = <F>;
+                };
+                
+                j_key: j_key {
+                    compatible = "zmk,behavior-key-press";
+                    label = "J_KEY";
+                    #binding-cells = <0>;
+                    keycode = <J>;
+                };
+                
+                shift_l: shift_l {
+                    compatible = "zmk,behavior-key-press";
+                    label = "SHIFT_L";
+                    #binding-cells = <0>;
+                    keycode = <LSHIFT>;
+                };
+                
+                shift_r: shift_r {
+                    compatible = "zmk,behavior-key-press";
+                    label = "SHIFT_R";
+                    #binding-cells = <0>;
+                    keycode = <RSHIFT>;
+                };
                 f_shift: f_shift {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "F_SHIFT";
-                        #binding-cells = <0>;
-        
-                        tapping-term-ms = <200>;
-                        quick-tap-ms = <120>;
-                        flavor = "tap-preferred";
-        
-                        bindings = <&kp F &kp LSHIFT>;
-                    };
-
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "F_SHIFT";
+                    #binding-cells = <0>;
+                
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <120>;
+                    flavor = "tap-preferred";
+                
+                    bindings = <&f_key &shift_l>;
+                };
+                
                 j_shift: j_shift {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "J_SHIFT";
-                        #binding-cells = <0>;
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "J_SHIFT";
+                    #binding-cells = <0>;
                 
-                        tapping-term-ms = <200>;
-                        quick-tap-ms = <120>;
-                        flavor = "tap-preferred";
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <120>;
+                    flavor = "tap-preferred";
                 
-                        bindings = <&kp J &kp RSHIFT>;
-                    };
+                    bindings = <&j_key &shift_r>;
+                };
+                
         };
 
         combos {
