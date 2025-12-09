@@ -45,52 +45,7 @@
                     label = "F_KEY";
                     #binding-cells = <0>;
                     keycode = <F>;
-                };
-                
-                j_key: j_key {
-                    compatible = "zmk,behavior-key-press";
-                    label = "J_KEY";
-                    #binding-cells = <0>;
-                    keycode = <J>;
-                };
-                
-                shift_l: shift_l {
-                    compatible = "zmk,behavior-key-press";
-                    label = "SHIFT_L";
-                    #binding-cells = <0>;
-                    keycode = <LSHIFT>;
-                };
-                
-                shift_r: shift_r {
-                    compatible = "zmk,behavior-key-press";
-                    label = "SHIFT_R";
-                    #binding-cells = <0>;
-                    keycode = <RSHIFT>;
-                };
-                f_shift: f_shift {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "F_SHIFT";
-                    #binding-cells = <0>;
-                
-                    tapping-term-ms = <200>;
-                    quick-tap-ms = <120>;
-                    flavor = "tap-preferred";
-                
-                    bindings = <&f_key &shift_l>;
-                };
-                
-                j_shift: j_shift {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "J_SHIFT";
-                    #binding-cells = <0>;
-                
-                    tapping-term-ms = <200>;
-                    quick-tap-ms = <120>;
-                    flavor = "tap-preferred";
-                
-                    bindings = <&j_key &shift_r>;
-                };
-                
+                };   
         };
 
         combos {
@@ -163,9 +118,9 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  | || |  N  |  M   |  ,  |dot_colon|  /  | shift_td|
 //                    | GUI | LWR | SPC | || | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T  /**/ &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC   &kp A &kp S &kp D &f_shift &kp G  /**/ &kp H &j_shift  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B  /**/ &kp N &kp M  &kp COMMA &dot_colon &kp FSLH &shift_td
+   &kp TAB     &kp Q   &kp W   &kp E   &kp R          &kp T  /**/   &kp Y  &kp U         &kp I      &kp O       &kp P      &kp BSPC
+   &kp ESC     &kp A   &kp S   &kp D   &mt LSHIFT F   &kp G  /**/   &kp H  &mt LSHIFT F  &kp K      &kp L       &kp SEMI   &kp SQT
+   &kp LCTRL   &kp Z   &kp X   &kp C   &kp V          &kp B  /**/   &kp N  &kp M         &kp COMMA  &dot_colon  &kp FSLH   &shift_td
                   &kp LGUI &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RALT
                         >;
                 };
