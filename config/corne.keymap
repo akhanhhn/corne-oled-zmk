@@ -39,13 +39,6 @@
                         tapping-term-ms = <250>;
                         bindings = <&kp DOT>, <&kp COLON>;
                 };
-
-                f_key: f_key {
-                    compatible = "zmk,behavior-key-press";
-                    label = "F_KEY";
-                    #binding-cells = <0>;
-                    keycode = <F>;
-                };   
         };
 
         combos {
