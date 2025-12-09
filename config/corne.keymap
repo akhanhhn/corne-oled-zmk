@@ -39,7 +39,32 @@
                         tapping-term-ms = <250>;
                         bindings = <&kp DOT>, <&kp COLON>;
                 };
+
+                f_shift: f_shift {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "F_SHIFT";
+                        #binding-cells = <0>;
+        
+                        tapping-term-ms = <200>;
+                        quick-tap-ms = <120>;
+                        flavor = "tap-preferred";
+        
+                        bindings = <&kp F>, <&kp LSHIFT>;
+                    };
+
+                j_shift: j_shift {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "J_SHIFT";
+                        #binding-cells = <0>;
+                
+                        tapping-term-ms = <200>;
+                        quick-tap-ms = <120>;
+                        flavor = "tap-preferred";
+                
+                        bindings = <&kp J>, <&kp RSHIFT>;
+                    };
         };
+
         combos {
             compatible = "zmk,combos";
                 timeout-ms = <30>;
@@ -91,12 +116,6 @@
                 combo_delete {
                 bindings = <&kp DEL>;
                 key-positions = <26 27>;
-                };
-
-            // c + v => shift
-                combo_shift {
-                bindings = <&kp LSHIFT>;
-                key-positions = <27 28>;
                 };
 
             // v + b => enter
