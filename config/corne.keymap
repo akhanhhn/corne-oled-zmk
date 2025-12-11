@@ -40,9 +40,10 @@
                         bindings = <&kp DOT>, <&kp COLON>;
                 };
 
-                hrm: behavior_hold_tap {
+                hrm: hrm {
                     compatible = "zmk,behavior-hold-tap";
                     label = "HRM";
+                    #binding-cells = <2>;
         
                     flavor = "balanced";
                     tapping-term-ms = <200>;
