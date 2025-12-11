@@ -40,14 +40,16 @@
                         bindings = <&kp DOT>, <&kp COLON>;
                 };
 
-                hrm: hrm {
+               hrm: hrm {
                     compatible = "zmk,behavior-hold-tap";
                     label = "HRM";
+                
                     #binding-cells = <2>;
-        
+                    bindings = <&none>, <&none>;   // thêm dòng này
+                
                     flavor = "balanced";
                     tapping-term-ms = <200>;
-        
+                
                     hold-trigger-on-release;
                     require-prior-idle-ms = <40>;
                 };
