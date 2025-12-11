@@ -39,6 +39,17 @@
                         tapping-term-ms = <250>;
                         bindings = <&kp DOT>, <&kp COLON>;
                 };
+
+                hrm: behavior_hold_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "HRM";
+        
+                    flavor = "balanced";
+                    tapping-term-ms = <200>;
+        
+                    hold-trigger-on-release;
+                    require-prior-idle-ms = <40>;
+                };
         };
 
         combos {
@@ -111,9 +122,9 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  | || |  N  |  M   |  ,  |dot_colon|  /  | shift_td|
 //                    | GUI | LWR | SPC | || | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB     &kp Q   &kp W   &kp E   &kp R          &kp T  /**/   &kp Y  &kp U         &kp I      &kp O       &kp P      &kp BSPC
-   &kp ESC     &kp A   &kp S   &kp D   &mt LSHIFT F   &kp G  /**/   &kp H  &mt LSHIFT J  &kp K      &kp L       &kp SEMI   &kp SQT
-   &kp LCTRL   &kp Z   &kp X   &kp C   &kp V          &kp B  /**/   &kp N  &kp M         &kp COMMA  &dot_colon  &kp FSLH   &shift_td
+   &kp TAB     &kp Q   &kp W   &kp E   &kp R           &kp T  /**/    &kp Y  &kp U          &kp I      &kp O       &kp P      &kp BSPC
+   &kp ESC     &kp A   &kp S   &kp D   &hrm LSHIFT F   &kp G  /**/    &kp H  &hrm LSHIFT J  &kp K      &kp L       &kp SEMI   &kp SQT
+   &kp LCTRL   &kp Z   &kp X   &kp C   &kp V           &kp B  /**/    &kp N  &kp M          &kp COMMA  &dot_colon  &kp FSLH   &shift_td
                   &kp LGUI &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RALT
                         >;
                 };
