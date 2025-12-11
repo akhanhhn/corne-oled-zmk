@@ -29,14 +29,14 @@
                 shift_td: shift_td {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
-                        tapping-term-ms = <250>;
+                        tapping-term-ms = <50>;
                         bindings = <&kp LSHIFT>, <&kp CAPS>;
                 };
 
                 dot_colon: dot_colon {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
-                        tapping-term-ms = <250>;
+                                tapping-term-ms = <50>;
                         bindings = <&kp DOT>, <&kp COLON>;
                 };
 
@@ -44,7 +44,7 @@
 
         combos {
             compatible = "zmk,combos";
-                timeout-ms = <30>;
+                timeout-ms = <5>;
                 require-prior-idle-ms = <30>;
 
             // U + I => (
