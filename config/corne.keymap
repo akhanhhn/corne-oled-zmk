@@ -33,13 +33,6 @@
                         bindings = <&kp LSHIFT>, <&kp CAPS>;
                 };
 
-                dot_colon: dot_colon {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                        bindings = <&kp DOT>, <&kp COLON>;
-                };
-
         };
 
         combos {
@@ -108,25 +101,25 @@
                 };
 
             // y + u => "
-                combo_enter {
+                combo_SQT {
                 bindings = <&kp DQT>;
                 key-positions = <6 7>;
                 };
 
             // h + j => <
-                combo_enter {
+                combo_LT {
                 bindings = <&kp LT>;
                 key-positions = <18 19>;
                 };
 
             // n + m => >
-                combo_enter {
+                combo_GT {
                 bindings = <&kp GT>;
                 key-positions = <30 31>;
                 };
 
             // l + ; => :
-                combo_enter {
+                combo_COLON {
                 bindings = <&kp COLON>;
                 key-positions = <20 21>;
                 };
@@ -137,27 +130,27 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  | || |  Y  |  U   |  I  |    O    |  P  |  BKSP   |
-// | ESC  |  A  |  S  |  D  |  F  |  G  | || |  H  |  J   |  K  |    L    |  ;  |   '     |
-// | CTRL |  Z  |  X  |  C  |  V  |  B  | || |  N  |  M   |  ,  |dot_colon|  /  | shift_td|
+// |  TAB |  Q  |  W  |  E  |  R  |  T  | || |  Y  |  U   |  I  |   O  |  P  |  BKSP   |
+// | ESC  |  A  |  S  |  D  |  F  |  G  | || |  H  |  J   |  K  |   L  |  ;  |   '     |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  | || |  N  |  M   |  ,  |   .  |  /  | shift_td|
 //                    | GUI | LWR | SPC | || | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB     &kp Q   &kp W   &kp E   &kp R           &kp T  /**/    &kp Y  &kp U          &kp I      &kp O       &kp P      &kp BSPC
-   &kp ESC     &kp A   &kp S   &kp D   &kp F           &kp G  /**/    &kp H   &kp J         &kp K      &kp L       &kp SEMI    &kp SQT
-   &kp LCTRL   &kp Z   &kp X   &kp C   &kp V           &kp B  /**/    &kp N  &kp M          &kp COMMA  &dot_colon  &kp FSLH   &shift_td
+   &kp TAB     &kp Q   &kp W   &kp E   &kp R           &kp T  /**/    &kp Y  &kp U          &kp I      &kp O    &kp P      &kp BSPC
+   &kp ESC     &kp A   &kp S   &kp D   &kp F           &kp G  /**/    &kp H   &kp J         &kp K      &kp L    &kp SEMI   &kp SQT
+   &kp LCTRL   &kp Z   &kp X   &kp C   &kp V           &kp B  /**/    &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH   &shift_td
                   &kp LGUI &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |  ||  |  6  |  7  |  8  |  9  |    -    | BKSP |
-// | ESC  |     | LFT | DWN | UP  | RGT |  ||  |  *  |  4  |  5  |  6  |    +    |  =   |
-// |LCTRL |PSCRN|     |     |     |     |  ||  |  /  |  1  |  2  |  3  |dot_colon|LSHIFT|
+// |  TAB |  1  |  2  |  3  |  4  |  5  |  ||  |  6  |  7  |  8  |  9  |  -  | BKSP |
+// | ESC  |     | LFT | DWN | UP  | RGT |  ||  |  *  |  4  |  5  |  6  |  +  |  =   |
+// |LCTRL |PSCRN|     |     |     |  ,  |  ||  |  /  |  1  |  2  |  3  |  .  |LSHIFT|
 //                    | GUI |     | SPC |  ||  | ENT |     |  0  |
                         bindings = <
    &kp TAB    &kp N1     &kp N2       &kp N3       &kp N4       &kp N5      /**/    &kp N6    &kp N7    &kp N8   &kp N9    &kp MINUS    &kp BSPC
    &kp ESC    &trans     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT   /**/    &kp ASTRK &kp N4    &kp N5   &kp N6    &kp PLUS     &kp EQUAL
-   &kp LCTRL  &kp PSCRN  &trans       &trans       &trans       &trans      /**/    &kp FSLH  &kp N1    &kp N2   &kp N3    &dot_colon   &kp LSHIFT
+   &kp LCTRL  &kp PSCRN  &trans       &trans       &trans       &kp COMMA   /**/    &kp FSLH  &kp N1    &kp N2   &kp N3    &kp DOT   &kp LSHIFT
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp N0
                         >;
                 };
