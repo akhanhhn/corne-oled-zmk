@@ -95,10 +95,40 @@
                 key-positions = <26 27>;
                 };
 
+            // c + v => shift
+                combo_shift {
+                bindings = <&kp LSHIFT>;
+                key-positions = <27 28>;
+                };
+
             // v + b => enter
                 combo_enter {
                 bindings = <&kp RET>;
                 key-positions = <28 29>;
+                };
+
+            // y + u => "
+                combo_enter {
+                bindings = <&kp DQT>;
+                key-positions = <6 7>;
+                };
+
+            // h + j => <
+                combo_enter {
+                bindings = <&kp LT>;
+                key-positions = <18 19>;
+                };
+
+            // n + m => >
+                combo_enter {
+                bindings = <&kp GT>;
+                key-positions = <30 31>;
+                };
+
+            // l + ; => :
+                combo_enter {
+                bindings = <&kp COLON>;
+                key-positions = <20 21>;
                 };
         };
 
@@ -122,12 +152,12 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |  ||  |  6  |  7  |  8  |  9  |    -    | BKSP |
 // | ESC  |     | LFT | DWN | UP  | RGT |  ||  |  *  |  4  |  5  |  6  |    +    |  =   |
-// |LCTRL |     |     |     |     |     |  ||  |  /  |  1  |  2  |  3  |dot_colon|LSHIFT|
+// |LCTRL |PSCRN|     |     |     |     |  ||  |  /  |  1  |  2  |  3  |dot_colon|LSHIFT|
 //                    | GUI |     | SPC |  ||  | ENT |     |  0  |
                         bindings = <
    &kp TAB    &kp N1     &kp N2       &kp N3       &kp N4       &kp N5      /**/    &kp N6    &kp N7    &kp N8   &kp N9    &kp MINUS    &kp BSPC
    &kp ESC    &trans     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT   /**/    &kp ASTRK &kp N4    &kp N5   &kp N6    &kp PLUS     &kp EQUAL
-   &kp LCTRL  &trans     &trans       &trans       &trans       &trans      /**/    &kp FSLH  &kp N1    &kp N2   &kp N3    &dot_colon   &kp LSHIFT
+   &kp LCTRL  &kp PSCRN  &trans       &trans       &trans       &trans      /**/    &kp FSLH  &kp N1    &kp N2   &kp N3    &dot_colon   &kp LSHIFT
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp N0
                         >;
                 };
@@ -148,14 +178,14 @@
 
                 fn_layer {
 // ----------------------------------------------------------------
-// |     | F1  | F2  | F3  | F4  | F5  | ||  | F6  | F7  | F8  | F9 | F10  | F11 |
-// |     |     |     |     |     |     | ||  |     |     |     |     |     | F12 |
-// |     |     |     |     |     |     | ||  |     |     |     |     |     |PSCRN|
+// |stdio_unlock| F1   | F2  | F3  | F4  | F5  | ||  | F6  | F7  | F8  | F9 | F10  | F11 |
+// |            |      |     |     |     |     | ||  |     |     |     |     |     | F12 |
+// |            |      |     |     |     |     | ||  |     |     |     |     |     |PSCRN|
 //               |     |     |     |   | ||  |     |     |
         bindings = <
-  &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5      &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-  &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &kp F12
-  &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &kp PSCRN
+  &studio_unlock &kp F1 &kp F2 &kp F3 &kp F4 &kp F5      &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+  &trans         &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &kp F12
+  &trans         &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &kp PSCRN
                      &trans &trans &trans        &trans &trans &trans
                         >;
                 };
