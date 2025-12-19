@@ -123,6 +123,18 @@
                 bindings = <&kp COLON>;
                 key-positions = <21 22>;
                 };
+
+            // q + j => !=
+                combo_NOTEQUAL {
+                bindings = <&kp EXCL &kp EQUAL>;
+                key-positions = <1 19>;
+                };
+
+            // h + m => ->
+                combo_ARROWRIGHT {
+                bindings = <&kp MINUS &kp GT>;
+                key-positions = <18 31>;
+                };
         };
 
         keymap {
