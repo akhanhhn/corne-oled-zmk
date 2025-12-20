@@ -38,11 +38,13 @@
         macros {
                 not_equal_macro: not_equal_macro {
                     compatible = "zmk,behavior-macro";
+                    #binding-cells = <0>;
                     bindings = <&macro_tap &kp EXCL &kp EQUAL>;
                 };
 
                 arrow_to_right: arrow_to_right {
                     compatible = "zmk,behavior-macro";
+                    #binding-cells = <0>;
                     bindings = <&macro_tap &kp MINUS &kp GT>;
                 };
             };
