@@ -357,11 +357,11 @@ path.combo {
 <path d="M336,70 l-233,-19" class="combo"/>
 <path d="M336,70 l233,19" class="combo"/>
 <rect rx="6" ry="6" x="322" y="57" width="28" height="26" class="combo"/>
-<text x="336" y="70" class="combo tap">!</text>
+<text x="336" y="70" class="combo tap"><tspan style="font-size: 64%">&amp;not_equal…</tspan></text>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="546" y="110" width="28" height="26" class="combo"/>
-<text x="560" y="122" class="combo tap">-</text>
+<text x="560" y="122" class="combo tap"><tspan style="font-size: 64%">&amp;arrow_to_…</tspan></text>
 </g>
 </g>
 </g>
@@ -595,11 +595,11 @@ path.combo {
 <path d="M336,70 l-233,-19" class="combo"/>
 <path d="M336,70 l233,19" class="combo"/>
 <rect rx="6" ry="6" x="322" y="57" width="28" height="26" class="combo"/>
-<text x="336" y="70" class="combo tap">!</text>
+<text x="336" y="70" class="combo tap"><tspan style="font-size: 64%">&amp;not_equal…</tspan></text>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="546" y="110" width="28" height="26" class="combo"/>
-<text x="560" y="122" class="combo tap">-</text>
+<text x="560" y="122" class="combo tap"><tspan style="font-size: 64%">&amp;arrow_to_…</tspan></text>
 </g>
 </g>
 </g>
@@ -833,11 +833,11 @@ path.combo {
 <path d="M336,70 l-233,-19" class="combo"/>
 <path d="M336,70 l233,19" class="combo"/>
 <rect rx="6" ry="6" x="322" y="57" width="28" height="26" class="combo"/>
-<text x="336" y="70" class="combo tap">!</text>
+<text x="336" y="70" class="combo tap"><tspan style="font-size: 64%">&amp;not_equal…</tspan></text>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="546" y="110" width="28" height="26" class="combo"/>
-<text x="560" y="122" class="combo tap">-</text>
+<text x="560" y="122" class="combo tap"><tspan style="font-size: 64%">&amp;arrow_to_…</tspan></text>
 </g>
 </g>
 </g>
@@ -1070,11 +1070,11 @@ path.combo {
 <path d="M336,70 l-233,-19" class="combo"/>
 <path d="M336,70 l233,19" class="combo"/>
 <rect rx="6" ry="6" x="322" y="57" width="28" height="26" class="combo"/>
-<text x="336" y="70" class="combo tap">!</text>
+<text x="336" y="70" class="combo tap"><tspan style="font-size: 64%">&amp;not_equal…</tspan></text>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="546" y="110" width="28" height="26" class="combo"/>
-<text x="560" y="122" class="combo tap">-</text>
+<text x="560" y="122" class="combo tap"><tspan style="font-size: 64%">&amp;arrow_to_…</tspan></text>
 </g>
 </g>
 </g>
