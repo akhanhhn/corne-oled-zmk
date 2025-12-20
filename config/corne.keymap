@@ -35,6 +35,25 @@
 
         };
 
+        macros {
+                not_equal_macro: not_equal_macro {
+                    compatible = "zmk,behavior-macro";
+                    bindings = <
+                        &kp EXCL
+                        &kp EQUAL
+                    >;
+                };
+
+                arrow_to_right: arrow_to_right {
+                    compatible = "zmk,behavior-macro";
+                    bindings = <
+                        &kp MINUS
+                        &kp GT
+                    >;
+                };
+
+            };
+
         combos {
             compatible = "zmk,combos";
                 timeout-ms = <5>;
@@ -126,13 +145,13 @@
 
             // q + j => !=
                 combo_NOTEQUAL {
-                bindings = <&kp EXCL &kp EQUAL>;
+                bindings = <&not_equal_macro>;
                 key-positions = <1 19>;
                 };
 
             // h + m => ->
-                combo_ARROWRIGHT {
-                bindings = <&kp MINUS &kp GT>;
+                combo_ARROWTORIGHT {
+                bindings = <&arrow_to_right>;
                 key-positions = <18 31>;
                 };
         };
