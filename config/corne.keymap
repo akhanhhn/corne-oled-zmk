@@ -33,6 +33,15 @@
                         bindings = <&kp LSHIFT>, <&kp CAPS>;
                 };
 
+                mt: mod_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    #binding-cells = <2>;
+                    flavor = "balanced";
+                    tapping-term-ms = <200>;
+                    bindings = <&kp>, <&kp>;
+                    display-name = "Mod-Tap";
+                };
+
         };
 
         macros {
@@ -164,7 +173,7 @@
    &kp TAB     &kp Q   &kp W   &kp E   &kp R           &kp T  /**/    &kp Y  &kp U          &kp I      &kp O    &kp P      &kp BSPC
    &kp ESC     &kp A   &kp S   &kp D   &kp F           &kp G  /**/    &kp H   &kp J         &kp K      &kp L    &kp SEMI   &kp SQT
    &kp LCTRL   &kp Z   &kp X   &kp C   &kp V           &kp B  /**/    &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH   &shift_td
-                  &kp LGUI &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RALT
+                  &kp LGUI &mo LOWER &kp SPACE   &mt LSHIFT RET &mo RAISE &kp RALT
                         >;
                 };
                 lower_layer {
