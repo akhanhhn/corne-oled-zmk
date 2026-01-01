@@ -50,7 +50,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '6'
+  - ','
   - '7'
   - '8'
   - '9'
@@ -70,10 +70,10 @@ layers:
   - '='
   - LCTRL
   - PSCRN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ','
+  - HOME
+  - PG DN
+  - PG UP
+  - END
   - /
   - '1'
   - '2'
