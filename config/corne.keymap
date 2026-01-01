@@ -15,15 +15,8 @@
 #define FN 3
 
 
-# Bật mouse / pointing
+
 CONFIG_ZMK_POINTING=y
-
-# Bật mouse buttons
-CONFIG_ZMK_MOUSE=y
-
-# (khuyên dùng)
-CONFIG_ZMK_POINTING_SMOOTH_SCROLLING=y
-
 
 / {
         conditional_layers {
