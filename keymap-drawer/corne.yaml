@@ -46,10 +46,10 @@ layers:
   lower:
   - TAB
   - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
   - ','
   - '7'
   - '8'
