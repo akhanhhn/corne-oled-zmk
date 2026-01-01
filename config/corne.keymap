@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define LOWER 1
@@ -178,15 +179,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2   |  3  |  4  |  5  |  ||  |  ,  |  7  |  8  |  9  |  -  | BKSP |
-// | ESC  |     | LFT  | DWN | UP  | RGT |  ||  |  *  |  4  |  5  |  6  |  +  |  =   |
-// |LCTRL |PSCRN| HOME |PGDWN|PGUP | END |  ||  |  /  |  1  |  2  |  3  |  .  |LSHIFT|
-//                    | GUI |     | SPC |  ||  | ENT |     |  0  |
+// |  TAB |  1  | MSC_LEFT | MSC_DWN | MSC_UP | MSC_RGT |  ||  |  ,  |  7  |  8  |  9  |  -  | BKSP |
+// | ESC  |     |    LFT   |   DWN   |   UP   |   RGT   |  ||  |  *  |  4  |  5  |  6  |  +  |  =   |
+// |LCTRL |PSCRN|   HOME   |  PGDWN  |  PGUP  |   END   |  ||  |  /  |  1  |  2  |  3  |  .  |LSHIFT|
+//                         |   GUI   |        |   SPC   |  ||  | ENT |     |  0  |
                         bindings = <
-   &kp TAB    &kp N1     &kp N2       &kp N3       &kp N4       &kp N5      /**/    &kp COMMA &kp N7    &kp N8   &kp N9    &kp MINUS    &kp BSPC
-   &kp ESC    &trans     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT   /**/    &kp ASTRK &kp N4    &kp N5   &kp N6    &kp PLUS     &kp EQUAL
-   &kp LCTRL  &kp PSCRN  &kp HOME     &kp PG_DN    &kp PG_UP    &kp END   /**/    &kp FSLH  &kp N1    &kp N2   &kp N3    &kp DOT   &kp LSHIFT
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp N0
+   &kp TAB    &kp N1     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT   /**/    &kp COMMA &kp N7    &kp N8   &kp N9    &kp MINUS    &kp BSPC
+   &kp ESC    &trans     &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT        /**/    &kp ASTRK  &kp N4    &kp N5   &kp N6    &kp PLUS     &kp EQUAL
+   &kp LCTRL  &kp PSCRN  &kp HOME        &kp PG_DN       &kp PG_UP      &kp END         /**/    &kp FSLH    &kp N1    &kp N2   &kp N3    &kp DOT   &kp LSHIFT
+                                        &kp LGUI           &trans       &kp SPACE               &kp RET     &trans    &kp N0
                         >;
                 };
 
