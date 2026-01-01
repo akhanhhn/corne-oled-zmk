@@ -225,6 +225,6 @@
 
 
         &msc {
-            time-to-max-speed-ms = <120>;
-            acceleration-exponent = <4>;
+            time-to-max-speed-ms = <80>;
+            acceleration-exponent = <2>;
         };
