@@ -16,8 +16,6 @@
 
 
 
-CONFIG_ZMK_POINTING=y
-
 / {
         conditional_layers {
             compatible = "zmk,conditional-layers";
